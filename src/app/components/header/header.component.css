@@ -1,0 +1,44 @@
+.profile-container {
+    display: flex;
+    justify-content: space-between; /* Space between name and info */
+    align-items: center; /* Vertically align items */
+    padding: 1rem 2rem; /* Add padding for spacing */
+    background-color: var(--primary); /* Keep the theme */
+    color: var(--text_header); /* Consistent text color */
+    width: 100%; /* Full width of the viewport */
+    border-bottom: 2px solid var(--accent_1); /* Optional: Adds a bottom border for separation */
+}
+
+.profile-name {
+    font-size: clamp(2rem, 5vw, 4rem); /* Responsive font size */
+    font-weight: bold; /* Professional look */
+    margin: 0; /* Remove unnecessary margins */
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-end; /* Align content to the right */
+    text-align: right; /* Right-align text */
+    justify-content: space-evenly; /* Evenly space out the elements vertically */
+    height: 100%; /* Ensure the container takes full height for equal spacing */
+}
+
+.profile-info p {
+    margin: 0.5rem 0; /* Equal vertical margin */
+    font-size: 1.2rem; /* Consistent font size for all text */
+    color: var(--text_body); /* Use secondary color for less emphasis */
+}
+
+.profile-info a {
+    margin: 0.5rem 0; /* Equal margin between the links */
+    font-size: 1.2rem; /* Consistent font size for all links */
+    color: #00a6ff; /* LinkedIn blue for links */
+    text-decoration: none; /* Remove underline for cleaner look */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.profile-info a:hover {
+    color: #007bff; /* Darker shade on hover */
+    text-decoration: underline; /* Reintroduce underline on hover */
+}
