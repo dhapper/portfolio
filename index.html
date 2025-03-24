@@ -1,0 +1,341 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+
+<header>
+    <h1>Dhaarshan Preshanthan</h1>
+    <nav>
+        <a href="#home">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+    </nav>
+</header>
+
+<section id="home" class="section">
+
+    <div style="display: flex; justify-content: space-between; width: 100%;">
+        <img src="assets/images/mii.png" alt="my mii" style="display: block; margin: 0 auto; float: left; margin-bottom: 5%;">
+        
+        <div class="bio-side-text">
+            <p>dhaarshan.p@gmail.com</p>
+            <p>Toronto, ON 📍</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/dhaarshan-preshanthan-69939024b/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/dhapper" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>    
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; width: 100%;">
+        <div style="flex-grow: 1; width: 0; margin-right: 20px;">  <!-- Allowing the left div to expand -->
+            <h3>Hello, I'm <span>Dhaarshan<span></h3>
+            <p>I’m a Computer Engineering graduate from Toronto Metropolitan University, specializing in software development.
+                I have experience in programming and database management, with a focus on game and web development.
+                During my co-op at Environment and Climate Change Canada,
+                I led projects using the Microsoft Power Platform to automate processes.</p>
+        </div>
+    </div>
+
+</section>
+
+
+
+<section id="skills" class="section">
+    <h2>Skills</h2>
+    <div class="skills-container">
+        <div class="skill-item">
+            <img src="assets/images/java.png" alt="Java" class="skill-image">
+            <p>Java</p>
+        </div>
+        <div class="skill-item">
+            <img src="assets/images/angular.png" alt="Angular" class="skill-image">
+            <p>Angular</p>
+        </div>
+        <div class="skill-item">
+            <img src="assets/images/power_apps.webp" alt="Power Apps" class="skill-image">
+            <p>Power Apps</p>
+        </div>
+        <div class="skill-item">
+            <img src="assets/images/power_automate.png" alt="Power Automate" class="skill-image">
+            <p>Power Automate</p>
+        </div>
+        <div class="skill-item">
+            <img src="assets/images/python.png" alt="Python" class="skill-image">
+            <p>Python</p>
+        </div>
+        <div class="skill-item">
+            <img src="assets/images/sql.png" alt="SQL" class="skill-image">
+            <p>MySQL</p>
+        </div>
+        <div class="skill-item">
+            <img src="assets/images/mongodb.png" alt="MongoDB" class="skill-image">
+            <p>MongoDB</p>
+        </div>
+        <div class="skill-item">
+            <img src="assets/images/C.png" alt="C programming" class="skill-image">
+            <p>C programming</p>
+        </div>
+    </div>
+</section>
+
+<section id="education" class="section">
+    <h2>Education</h2>
+    <div class="education-content">
+        <div class="education-text">
+            <h3>Toronto Metropolitan University</h3>
+            
+            <p><strong>Bachelor of Computer Engineering</strong> (2019 - 2024)<br>
+            Enrolled in Co-op Program</p>
+
+            <h4>Dean's List:</h4>
+            <ul>
+                <li>2019 - 2020</li>
+                <li>2021 - 2022</li>
+                <li>2023 - 2024</li>
+            </ul>
+
+            <h4>Areas of Study:</h4>
+            <ul>
+                <li>Object-Oriented Programming</li>
+                <li>Database Systems</li>
+                <li>Software Development</li>
+                <li>Software Testing and Quality Assurance (QA)</li>
+            </ul>
+            <p>Player for TMU Rocket League E-sports Teams</p>
+        </div>
+        <div class="education-images">
+            <img src="assets/images/TMU.png" alt="TMU Logo" class="education-image">
+            <img src="assets/images/campus.jpg" alt="Campus" class="education-image">
+            <img src="assets/images/necc.jpg" alt="NECC" class="education-image">
+        </div>
+    </div>
+</section>
+
+<section id="experience" class="section">
+    <h2>Experience</h2>
+    <h3>IT Analyst, Environment and Climate Change Canada (ECCC)</h3>
+    <p>May 2022 - August 2023</p>
+    <ul>
+        <li>Resolved technology issues through collaboration with clients and the internal tech team.</li>
+        <li>Developed Power Automate workflows for data extraction and automated notifications.</li>
+        <li>Designed a Power Apps scheduler for streamlined data entry with real-time database integration.</li>
+        <li>Monitored application uptime using ELK and created data visualization dashboards.</li>
+    </ul>
+</section>
+
+<section id="projects" class="section">
+    <h2>Projects</h2>
+    
+    <div style="text-align: center; margin-top: 10%;">
+        <nav class="projects-toc">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="#real-time-java-game-engine">Real-Time Java Game Engine</a></li>
+                <li><a href="#rpg-java-game-engine">RPG Java Game Engine</a></li>
+                <li><a href="#tile-based-java-map-editor">Tile-Based Java Map Editor</a></li>
+                <li><a href="#pokemon-database-angular-app">Pokémon Database Angular App</a></li>
+                <li><a href="#watch-list-angular-app">Watch-List Angular App</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="real-time-java-game-engine" class="project">
+        <h3>Real-Time Java Game Engine</h3>
+        <p>
+            I created a real-time Java game engine that powers unique and engaging gaming experiences. 
+            The featured game I have developed, demonstrated in the GIFs below, showcases a complex movement 
+            and combat system with dynamic character interactions, providing smooth and responsive gameplay that players will love.
+        </p>
+        
+        <h4>Skills Utilized:</h4>
+        <ul>
+            <li>Java</li>
+            <li>Java Swing</li>
+            <li>Game Development</li>
+            <li>Game Design</li>
+            <li>Pixel Art</li>
+        </ul>
+    
+        <p style="text-align: center;">
+            <a href="https://github.com/dhapper/indie-game" target="_blank">
+                View Source Code
+            </a>
+        </p>
+        
+        <div>
+            <img src="assets/gifs/demo_p1_cropped.gif" alt="Real-Time Java Game Engine Demo 1">
+            <img src="assets/gifs/demo_p2_cropped.gif" alt="Real-Time Java Game Engine Demo 2">
+        </div>
+    </div>
+
+    <div id="rpg-java-game-engine" class="project">
+        <h3>Real-Time Java Game Engine</h3>
+        <p>
+            I created a real-time Java game engine that powers unique and engaging gaming experiences. 
+            The featured game I have developed, demonstrated in the GIFs below, showcases a complex 
+            movement and combat system with dynamic character interactions, providing smooth and 
+            responsive gameplay that players will love.
+        </p>
+        
+        <h4>Skills Utilized:</h4>
+        <ul>
+            <li>Java</li>
+            <li>Java Swing</li>
+            <li>Game Development</li>
+            <li>Game Design</li>
+            <li>Pixel Art</li>
+        </ul>
+    
+        <p style="text-align: center;">
+            <a href="https://github.com/dhapper/rpg" target="_blank">
+                View Source Code
+            </a>
+        </p>
+     
+        <div style="margin-top: 20px;">
+            <img src="assets/gifs/rpg_demo.gif" alt="RPG Java Game Engine Demo">
+        </div>
+    </div>
+
+    <div id="tile-based-java-map-editor" class="project">
+        <h3>Tile-Based Java Map Editor</h3>
+        <p>
+            My hobby of developing games has led me to create a Map Maker to assist in the game development process. 
+            This map maker allows you to build multilayered maps with ease, providing input options for custom parameters 
+            such as sprite size, map size, and the ability to use custom spritesheets. Additionally, it can load 
+            previously made maps, enabling you to easily edit and make quick fixes to your designs. The image below shows the UI with the map loaded from my RPG game.
+        </p>
+        
+        <h4>Skills Utilized:</h4>
+        <ul>
+            <li>Java</li>
+            <li>Java Swing</li>
+            <li>UI Development</li>
+        </ul>
+    
+        <!-- <p style="text-align: center;">
+            <a href="https://github.com/dhapper/map-maker" target="_blank">
+                View Source Code
+            </a>
+        </p> -->
+        
+        <div>
+            <img src="assets/images/map_editor.png" alt="Tile-Based Java Map Editor">
+        </div>
+    </div>
+    
+    <div id="pokemon-database-angular-app" class="project">
+        <h3>Pokémon Database Angular App</h3>
+        <p>
+            The Pokémon Database Angular App is a dynamic web application built with Angular, showcasing a comprehensive Pokémon database. 
+            Users can explore various Pokémon generations, view detailed information, and enjoy an interactive, visually engaging experience. 
+            The app is deployed using GitHub Pages for accessibility and seamless navigation.
+        </p>
+        
+        <h4>Key Features:</h4>
+        <ul>
+            <li>Angular Framework: Interactive and responsive UI for navigating through Pokémon generations and details.</li>
+            <li>API Integration: Real-time Pokémon data fetched via RESTful APIs for detailed stats and descriptions.</li>
+            <li>Routing: Seamless navigation between pages, enhancing user experience.</li>
+            <li>GitHub Pages Deployment: Fully deployed app accessible online for all users.</li>
+            <li>Professional UI: Clean and modern design with an intuitive user interface.</li>
+        </ul>
+    
+        <h4>Skills Utilized:</h4>
+        <ul>
+            <li>Full-Stack Development</li>
+            <li>Angular</li>
+            <li>APIs</li>
+            <li>TypeScript</li>
+            <li>Front-End Web Development</li>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ul>
+    
+        <p style="text-align: center;">
+            <a href="https://dhapper.github.io/pokemon-app-angular/#/dex/1" target="_blank">
+                View App
+            </a>
+        </p>
+        
+        <div class="project-images" style="margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center;">
+            <img src="assets/images/PAA_dex.png" alt="Pokémon Database Entry" class="project-image expandable-image" style="max-width: 48%; margin: 1%; border-radius: 10px;">
+            <img src="assets/images/PAA_entry.png" alt="Pokémon Database Details" class="project-image expandable-image" style="max-width: 48%; margin: 1%; border-radius: 10px;">
+        </div>
+    </div>
+    
+    <div id="watch-list-angular-app" class="project">
+        <h3>Watch-List Angular App</h3>
+        <p>
+            Watch-List is a dynamic web application that allows users to search for TV shows, view detailed information, 
+            and maintain a personalized favorites list. The app leverages the TVMaze API for real-time show data 
+            like descriptions, ratings, and images.
+        </p>
+        
+        <h4>Key Features:</h4>
+        <ul>
+            <li>Angular Frontend: Interactive and responsive user interface for searching and managing TV shows.</li>
+            <li>Node.js & Express Backend: Efficient API handling and server-side logic with RESTful architecture.</li>
+            <li>MongoDB: NoSQL database for storing user profiles and watchlists, ensuring data persistence.</li>
+            <li>Java Spring Boot Authentication: Secure login and profile management integrated with MongoDB.</li>
+            <li>Professional UI: Modern, user-friendly interface for an enhanced experience.</li>
+        </ul>
+    
+        <h4>Skills Utilized:</h4>
+        <ul>
+            <li>Full-Stack Development</li>
+            <li>NoSQL</li>
+            <li>Spring Boot</li>
+            <li>Angular</li>
+            <li>APIs</li>
+        </ul>
+    
+        <p style="text-align: center;">
+            <a href="https://dhapper.github.io/watch-list/#/login" target="_blank">
+                View App
+            </a>
+        </p>
+        
+        <div class="project-images" style="margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center;">
+            <img src="assets/images/watchlist_login.jpg" alt="Watch-List Login" class="project-image expandable-image" style="max-width: 30%; margin: 1%; border-radius: 10px;">
+            <img src="assets/images/watchlist_search.jpg" alt="Watch-List Search" class="project-image expandable-image" style="max-width: 30%; margin: 1%; border-radius: 10px;">
+            <img src="assets/images/watchlist_profile.jpg" alt="Watch-List Profile" class="project-image expandable-image" style="max-width: 30%; margin: 1%; border-radius: 10px;">
+        </div>
+    </div>
+    
+</section>
+
+<footer>
+    <h4>Connect with me!</h4>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/dhaarshan-preshanthan-69939024b/" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/dhapper" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="mailto:dhaarshan.p@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
