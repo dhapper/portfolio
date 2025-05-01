@@ -1,342 +1,335 @@
-<!-- index.html -->
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Dhaarshan's Web Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/87ffeac168.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
-<header>
-    <h1>Dhaarshan Preshanthan</h1>
-    <nav>
-        <a href="#home">About Me</a>
-        <a href="#skills">Skills</a>
-        <a href="#education">Education</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-    </nav>
-</header>
-
-<section id="home" class="section">
-
-    <div style="display: flex; justify-content: space-between; width: 100%;">
-        <img src="assets/images/mii.png" alt="my mii" style="display: block; margin: 0 auto; float: left; margin-bottom: 5%;">
-        
-        <div class="bio-side-text">
-            <p>dhaarshan.p@gmail.com</p>
-            <p>Toronto, ON 📍</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/dhaarshan-preshanthan-69939024b/" target="_blank" aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-            </div>
-            <div class="social-icons">
-                <a href="https://github.com/dhapper" target="_blank" aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>    
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="assets/logo_v2.png" alt="logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi, I'm <span>Dhaarshan</span><br>from Canada</h1>
             </div>
         </div>
     </div>
 
-    <div style="display: flex; justify-content: space-between; width: 100%;">
-        <div style="flex-grow: 1; width: 0; margin-right: 20px;">  <!-- Allowing the left div to expand -->
-            <h3>Hello, I'm <span>Dhaarshan<span></h3>
-            <p>I’m a Computer Engineering graduate from Toronto Metropolitan University, specializing in software development.
-                I have experience in programming and database management, with a focus on game and web development.
-                During my co-op at Environment and Climate Change Canada,
-                I led projects using the Microsoft Power Platform to automate processes.</p>
+    <!-- -------------------- about -------------------- -->
+    <!-- <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/portrait_v2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+                        sint occaecat cupidatat non proident, sunt in culpa qui officia
+                        deserunt mollit anim id est laborum.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Andriod/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>IT Analyst</span><br>Environment and Climate Change Canada</li>
+                            <li><span>UI Designer</span><br>Tiramisu - ride share experience</li>
+                            <li><span>Software Developer</span><br>Self learning and hobby projects</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Toronto Metropolitan University</span><br>2019-2024</li>
+                            <li><span>Computer Engineering</span><br>co-op and software stream</li>
+                            <li><span>Deans List:</span><br>19-20, 21-22, 23-24</li>
+                            <li><span>Extra curricular activities:</span><br>Player for TMU Rocket League E-sports Team
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- -------------------- about v2 -------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="assets/portrait_v2.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate software engineer with a love for problem solving and innovation, I hold a Computer Engineering degree from Toronto Metropolitan University with a specialization in software. With professional experience as an IT Analyst at Environment and Climate Change Canada, I developed workflows and applications. In my spare time I enjoy working on personal coding projects, and am currently contributing to a Canadian ride-share project. Outside of tech, my physical hobbies include playing soccer, basketball, and working out. I also enjoy playing video games such as Pokémon and Rocket League. My goal is to build a career in the software industry within an environment that embraces change and innovation. I’m always eager to learn, collaborate, and create impactful solutions.</p>
+
+                    <div class="sub-section">
+                        <div class="experience-col">
+                            <h3>Experience</h3>
+                            <ul>
+                                <li><span>IT Analyst</span><br>Environment and Climate Change Canada</li>
+                                <li><span>UI Designer</span><br>Tiramisu - ride share experience</li>
+                                <li><span>Software Developer</span><br>Self learning and hobby projects</li>
+                            </ul>
+                        </div>
+                        <div class="vertical-line"></div>
+                        <div class="education-col">
+                            <h3>Education</h3>
+                            <ul>
+                                <li><span>Toronto Metropolitan University</span><br>2019-2024</li>
+                                <li><span>Computer Engineering</span><br>co-op and software stream</li>
+                                <li><span>Deans List:</span><br>19-20, 21-22, 23-24</li>
+                                <li><span>Extra curricular activities:</span><br>Player for TMU Rocket League E-sports
+                                    Team
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-</section>
 
-
-
-<section id="skills" class="section">
-    <h2>Skills</h2>
-    <div class="skills-container">
-        <div class="skill-item">
-            <img src="assets/images/java.png" alt="Java" class="skill-image">
-            <p>Java</p>
-        </div>
-        <div class="skill-item">
-            <img src="assets/images/angular.png" alt="Angular" class="skill-image">
-            <p>Angular</p>
-        </div>
-        <div class="skill-item">
-            <img src="assets/images/power_apps.webp" alt="Power Apps" class="skill-image">
-            <p>Power Apps</p>
-        </div>
-        <div class="skill-item">
-            <img src="assets/images/power_automate.png" alt="Power Automate" class="skill-image">
-            <p>Power Automate</p>
-        </div>
-        <div class="skill-item">
-            <img src="assets/images/python.png" alt="Python" class="skill-image">
-            <p>Python</p>
-        </div>
-        <div class="skill-item">
-            <img src="assets/images/sql.png" alt="SQL" class="skill-image">
-            <p>MySQL</p>
-        </div>
-        <div class="skill-item">
-            <img src="assets/images/mongodb.png" alt="MongoDB" class="skill-image">
-            <p>MongoDB</p>
-        </div>
-        <div class="skill-item">
-            <img src="assets/images/C.png" alt="C programming" class="skill-image">
-            <p>C programming</p>
-        </div>
-    </div>
-</section>
-
-<section id="education" class="section">
-    <h2>Education</h2>
-    <div class="education-content">
-        <div class="education-text">
-            <h3>Toronto Metropolitan University</h3>
-            
-            <p><strong>Bachelor of Computer Engineering</strong> (2019 - 2024)<br>
-            Enrolled in Co-op Program</p>
-
-            <h4>Dean's List:</h4>
-            <ul>
-                <li>2019 - 2020</li>
-                <li>2021 - 2022</li>
-                <li>2023 - 2024</li>
-            </ul>
-
-            <h4>Areas of Study:</h4>
-            <ul>
-                <li>Object-Oriented Programming</li>
-                <li>Database Systems</li>
-                <li>Software Development</li>
-                <li>Software Testing and Quality Assurance (QA)</li>
-            </ul>
-            <p>Player for TMU Rocket League E-sports Teams</p>
-        </div>
-        <div class="education-images">
-            <img src="assets/images/TMU.png" alt="TMU Logo" class="education-image">
-            <img src="assets/images/campus.jpg" alt="Campus" class="education-image">
-            <img src="assets/images/necc.jpg" alt="NECC" class="education-image">
-        </div>
-    </div>
-</section>
-
-<section id="experience" class="section">
-    <h2>Experience</h2>
-    <h3>IT Analyst, Environment and Climate Change Canada (ECCC)</h3>
-    <p>May 2022 - August 2023</p>
-    <ul>
-        <li>Resolved technology issues through collaboration with clients and the internal tech team.</li>
-        <li>Developed Power Automate workflows for data extraction and automated notifications.</li>
-        <li>Designed a Power Apps scheduler for streamlined data entry with real-time database integration.</li>
-        <li>Monitored application uptime using ELK and created data visualization dashboards.</li>
-    </ul>
-</section>
-
-<section id="projects" class="section">
-    <h2>Projects</h2>
-    
-    <div style="text-align: center; margin-top: 10%;">
-        <nav class="projects-toc">
-            <h3>Table of Contents</h3>
-            <ul>
-                <li><a href="#real-time-java-game-engine">Real-Time Java Game Engine</a></li>
-                <li><a href="#rpg-java-game-engine">RPG Java Game Engine</a></li>
-                <li><a href="#tile-based-java-map-editor">Tile-Based Java Map Editor</a></li>
-                <li><a href="#pokemon-database-angular-app">Pokémon Database Angular App</a></li>
-                <li><a href="#watch-list-angular-app">Watch-List Angular App</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <div id="real-time-java-game-engine" class="project">
-        <h3>Real-Time Java Game Engine</h3>
-        <p>
-            I created a real-time Java game engine that powers unique and engaging gaming experiences. 
-            The featured game I have developed, demonstrated in the GIFs below, showcases a complex movement 
-            and combat system with dynamic character interactions, providing smooth and responsive gameplay that players will love.
-        </p>
-        
-        <h4>Skills Utilized:</h4>
-        <ul>
-            <li>Java</li>
-            <li>Java Swing</li>
-            <li>Game Development</li>
-            <li>Game Design</li>
-            <li>Pixel Art</li>
-        </ul>
-    
-        <p style="text-align: center;">
-            <a href="https://github.com/dhapper/indie-game" target="_blank">
-                View Source Code
-            </a>
-        </p>
-        
-        <div>
-            <img src="assets/gifs/demo_p1_cropped.gif" alt="Real-Time Java Game Engine Demo 1">
-            <img src="assets/gifs/demo_p2_cropped.gif" alt="Real-Time Java Game Engine Demo 2">
+    <!-- -------------------- services -------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Back End Developer</h2>
+                    <ul>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>C programming</li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-solid fa-paintbrush"></i>
+                    <h2>Front End Developer</h2>
+                    <ul>
+                        <li>Angular</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-brands fa-microsoft"></i>
+                    <h2>Power Platform Developer</h2>
+                    <ul>
+                        <li>Power Automate</li>
+                        <li>Power Apps</li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>Database administrator</h2>
+                    <ul>
+                        <li>SQL</li>
+                        <li>MongoDB</li>
+                        <li>JSON</li>
+                    </ul>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cloud"></i>
+                    <h2>Cloud Solutions</h2>
+                    <ul>
+                        <li>Firebase</li>
+                        <li>ELK stack</li>
+                        <li>gh-pages</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div id="rpg-java-game-engine" class="project">
-        <h3>RPG Java Game Engine</h3>
-        <p>
-            I developed a real-time Java RPG game engine that powers immersive and engaging gaming experiences.
-            The featured game I have created showcases an intricate system for NPC and environment interactions, 
-            allowing players to explore a rich, responsive world. 
-            Key features include dynamic dialogues that unfold over time, offering players the option to read at their own pace or skip ahead. Additionally, 
-            the engine seamlessly supports transitions between different locations, enhancing the overall narrative flow and player experience.
-        </p>
-        
-        <h4>Skills Utilized:</h4>
-        <ul>
-            <li>Java</li>
-            <li>Java Swing</li>
-            <li>Game Development</li>
-            <li>Game Design</li>
-            <li>Pixel Art</li>
-        </ul>
-    
-        <p style="text-align: center;">
-            <a href="https://github.com/dhapper/rpg" target="_blank">
-                View Source Code
-            </a>
-        </p>
-     
-        <div style="margin-top: 20px;">
-            <img src="assets/gifs/rpg_demo.gif" alt="RPG Java Game Engine Demo">
+    <!-- -------------------- portfolio -------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <!-- make these images long -->
+                <div class="work">
+                    <img src="assets/project_cover_images/rt_ge.png" alt="">
+                    <div class="layer">
+                        <h3>Real-Time Game Engine</h3>
+                        <h4>Java</h4>
+                        <p>An immersive real-time game engine that seamlessly integrates advanced mechanics for combat
+                            and movement.</p>
+                        <a href="projects/real_time_game_engine.html"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/project_cover_images/binge_buddy_v1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Binge Buddy<br>TV Companion App</h3>
+                        <h4>Angular</h4>
+                        <p>An app for users to track desired shows and receive recommendations based on their viewing
+                            history.</p>
+                        <a href="projects/binge_buddy.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/project_cover_images/monferno.jpg" alt="">
+                    <div class="layer">
+                        <h3>Pokémon Database App</h3>
+                        <h4>Angular</h4>
+                        <p>Dynamic database that provides users with detailed entries for each Pokémon.</p>
+                        <a href="projects/pokemon_database_app.html"><i
+                                class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/project_cover_images/rpg.jpg" alt="">
+                    <div class="layer">
+                        <h3>RPG Game Engine</h3>
+                        <h4>Java</h4>
+                        <p>An immersive RPG game engine that integrates complex mechanics for character and overworld
+                            interaction.</p>
+                        <a href="projects/rpg_game_engine.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="assets/project_cover_images/map_editor_v6.png" alt="">
+                    <div class="layer">
+                        <h3>Tile-Based Map Editor</h3>
+                        <h4>Java</h4>
+                        <p>highly configurable map editor that enables users to import and use their own spritesheets
+                            for tailored game design.</p>
+                        <a href="projects/map_editor.html"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
         </div>
     </div>
 
-    <div id="tile-based-java-map-editor" class="project">
-        <h3>Tile-Based Java Map Editor</h3>
-        <p>
-            My hobby of developing games has led me to create a Map Maker to assist in the game development process. 
-            This map maker allows you to build multilayered maps with ease, providing input options for custom parameters 
-            such as sprite size, map size, and the ability to use custom spritesheets. Additionally, it can load 
-            previously made maps, enabling you to easily edit and make quick fixes to your designs. The image below shows the UI with the map loaded from my RPG game.
-        </p>
-        
-        <h4>Skills Utilized:</h4>
-        <ul>
-            <li>Java</li>
-            <li>Java Swing</li>
-            <li>UI Development</li>
-        </ul>
-    
-        <!-- <p style="text-align: center;">
-            <a href="https://github.com/dhapper/map-maker" target="_blank">
-                View Source Code
-            </a>
-        </p> -->
-        
-        <div>
-            <img src="assets/images/map_editor.png" alt="Tile-Based Java Map Editor">
-        </div>
-    </div>
-    
-    <div id="pokemon-database-angular-app" class="project">
-        <h3>Pokémon Database Angular App</h3>
-        <p>
-            The Pokémon Database Angular App is a dynamic web application built with Angular, showcasing a comprehensive Pokémon database. 
-            Users can explore various Pokémon generations, view detailed information, and enjoy an interactive, visually engaging experience. 
-            The app is deployed using GitHub Pages for accessibility and seamless navigation.
-        </p>
-        
-        <h4>Key Features:</h4>
-        <ul>
-            <li>Angular Framework: Interactive and responsive UI for navigating through Pokémon generations and details.</li>
-            <li>API Integration: Real-time Pokémon data fetched via RESTful APIs for detailed stats and descriptions.</li>
-            <li>Routing: Seamless navigation between pages, enhancing user experience.</li>
-            <li>GitHub Pages Deployment: Fully deployed app accessible online for all users.</li>
-            <li>Professional UI: Clean and modern design with an intuitive user interface.</li>
-        </ul>
-    
-        <h4>Skills Utilized:</h4>
-        <ul>
-            <li>Full-Stack Development</li>
-            <li>Angular</li>
-            <li>APIs</li>
-            <li>TypeScript</li>
-            <li>Front-End Web Development</li>
-            <li>HTML</li>
-            <li>CSS</li>
-        </ul>
-    
-        <p style="text-align: center;">
-            <a href="https://dhapper.github.io/pokemon-app-angular/#/dex/1" target="_blank">
-                View App
-            </a>
-        </p>
-        
-        <div class="project-images" style="margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center;">
-            <img src="assets/images/PAA_dex.png" alt="Pokémon Database Entry" class="project-image expandable-image" style="max-width: 48%; margin: 1%; border-radius: 10px;">
-            <img src="assets/images/PAA_entry.png" alt="Pokémon Database Details" class="project-image expandable-image" style="max-width: 48%; margin: 1%; border-radius: 10px;">
-        </div>
-    </div>
-    
-    <div id="watch-list-angular-app" class="project">
-        <h3>Watch-List Angular App</h3>
-        <p>
-            Watch-List is a dynamic web application that allows users to search for TV shows, view detailed information, 
-            and maintain a personalized favorites list. The app leverages the TVMaze API for real-time show data 
-            like descriptions, ratings, and images.
-        </p>
-        
-        <h4>Key Features:</h4>
-        <ul>
-            <li>Angular Frontend: Interactive and responsive user interface for searching and managing TV shows.</li>
-            <li>Node.js & Express Backend: Efficient API handling and server-side logic with RESTful architecture.</li>
-            <li>MongoDB: NoSQL database for storing user profiles and watchlists, ensuring data persistence.</li>
-            <li>Java Spring Boot Authentication: Secure login and profile management integrated with MongoDB.</li>
-            <li>Professional UI: Modern, user-friendly interface for an enhanced experience.</li>
-        </ul>
-    
-        <h4>Skills Utilized:</h4>
-        <ul>
-            <li>Full-Stack Development</li>
-            <li>NoSQL</li>
-            <li>Spring Boot</li>
-            <li>Angular</li>
-            <li>APIs</li>
-        </ul>
-    
-        <p style="text-align: center;">
-            <a href="https://dhapper.github.io/watch-list/#/login" target="_blank">
-                View App
-            </a>
-        </p>
-        
-        <div class="project-images" style="margin-top: 20px; display: flex; flex-wrap: wrap; justify-content: center;">
-            <img src="assets/images/watchlist_login.jpg" alt="Watch-List Login" class="project-image expandable-image" style="max-width: 30%; margin: 1%; border-radius: 10px;">
-            <img src="assets/images/watchlist_search.jpg" alt="Watch-List Search" class="project-image expandable-image" style="max-width: 30%; margin: 1%; border-radius: 10px;">
-            <img src="assets/images/watchlist_profile.jpg" alt="Watch-List Profile" class="project-image expandable-image" style="max-width: 30%; margin: 1%; border-radius: 10px;">
-        </div>
-    </div>
-    
-</section>
+    <!-- -------------------- contact -------------------- -->
 
-<footer>
-    <h4>Connect with me!</h4>
-    <div class="social-icons">
-        <a href="https://www.linkedin.com/in/dhaarshan-preshanthan-69939024b/" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/dhapper" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="mailto:dhaarshan.p@gmail.com" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-        </a>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> dhaarshan.p@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 647-327-7426</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/dhaarshan-preshanthan-69939024b/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/dhapper"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="assets/Resume - Dhaarshan Preshanthan.pdf" download class="btn btn2">Download My Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <div class="submit-btn-container">
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </div>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- -------------------- footer -------------------- -->
+
+        <div class="copyright">
+            <footer>
+                <p>This portfolio features content from various sources.<br>For details, please visit my <a href="attributions.html">Attribution Page</a>.</p>
+            </footer>
+        </div>
     </div>
-</footer>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0"
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyo5g_i9pEOl86kgMN3gcYdUJf0FW8rO0wf0_LIq-pGlxMPNy7AegmFKVzw2r7X8vTJ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    console.log('Success!', response)
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
 
 </body>
+
 </html>
